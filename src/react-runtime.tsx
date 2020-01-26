@@ -26,7 +26,7 @@ export function reactRuntime<S, A>(
       );
       return killProgram;
     }, []);
-    return program.view && myState && dispatchRef.current ? (
+    return program.view && myState !== undefined && dispatchRef.current ? (
       <program.view state={myState} dispatch={dispatchRef.current} />
     ) : null;
   };
