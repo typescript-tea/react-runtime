@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@typescript-tea/react-runtime",
   "version": "0.1.0",
   "description": "React runtime for typescript-tea",
