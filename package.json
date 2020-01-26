@@ -1,6 +1,6 @@
 {
   "name": "@typescript-tea/react-runtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React runtime for typescript-tea",
   "main": "dist/umd.js",
   "module": "lib/index.js",
