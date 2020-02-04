@@ -8,6 +8,24 @@
 
 React runtime for typescript-tea
 
+## Introduction
+
+This library wraps the runtime in the core library to add support for react as a view library in a program.
+
+## How to use
+
+```
+yarn add @typescript-tea/react-runtime
+```
+
+## Documentation
+
+Please see the [documentation site](https://typescript-tea.github.io/react-runtime/).
+
+## Example
+
+See the [core library](https://github.com/typescript-tea/core#example) for an example.
+
 ## How to develop
 
 Node version >=12.6.0 is needed for development.
