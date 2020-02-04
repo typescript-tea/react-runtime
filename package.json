@@ -36,9 +36,10 @@
     "prettier": "^1.19.1",
     "react": "^16.8.3",
     "rimraf": "^3.0.0",
-    "rollup": "^1.29.1",
     "ts-jest": "^25.0.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "peerDependencies": {
     "@typescript-tea/core": "^0.1.0",
@@ -50,7 +51,7 @@
     "test": "jest",
     "test-coverage": "jest --coverage",
     "lint": "eslint './src/**/*.ts{,x}' --ext .js,.ts,.tsx -f visualstudio",
-    "dist": "yarn build && rimraf dist && rollup lib/index.js --file dist/umd.js --format umd --name TypescriptTeaCore",
+    "dist": "yarn build && rimraf dist && webpack --config webpack.dist.config",
     "verify": "yarn lint && yarn test-coverage && yarn dist",
     "report-coverage": "codecov -f coverage/lcov.info",
     "preversion": "yarn verify",
