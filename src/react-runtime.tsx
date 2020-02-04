@@ -6,6 +6,9 @@ import {
   EffectManager
 } from "@typescript-tea/core";
 
+/**
+ * Use this to start a Program if you want to use React as the view library.
+ */
 export function reactRuntime<S, A>(
   program: Program<S, A, JSX.Element>,
   managers: ReadonlyArray<EffectManager<A>>
